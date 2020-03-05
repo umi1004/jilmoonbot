@@ -1,5 +1,4 @@
 import discord
-import os
 
 client = discord.Client()
 
@@ -95,10 +94,34 @@ async def on_message(message):
     await message.channel.send("방탄소년단 좋아해요~")
   if message.content.startswith("/안녕하세요"):
     await message.channel.send("반갑습니다:D")
+  if message.content == "/유미 배그":
+    await message.channel.send("https://pubg.op.gg/user/t_OuO_r")
+  if message.content == "/유진 배그":
+    await message.channel.send("https://pubg.op.gg/user/bigboss1227")
+  if message.content == "/혜원 배그":
+    await message.channel.send("https://pubg.op.gg/user/Hye_n52")
+  if message.content == "/현호 배그":
+    await message.channel.send("https://pubg.op.gg/user/Captain_Of_Best")
+  if message.content == "/슬기 배그":
+    await message.channel.send("https://pubg.op.gg/user/S_OwO_K")
+  if message.content == "/뷔":
+    await message.channel.send("유미 남친")
+  if message.content == "/유미 남친":
+    await message.channel.send("김태형=V")
+  if message.content == "/질문봇":
+    await message.channel.send("똑똑이 (ง •̀_•́)ง")
+  if message.content == "/티빙":
+    await message.channel.send("http://www.tving.com/")
+  if message.content == "/넷플릭스":
+    await message.channel.send("https://www.netflix.com/")
+  if message.content == "/왓챠":
+    await message.channel.send("https://play.watcha.net/")
+  if message.content == "/왕코":
+    await message.channel.send("ㄱㅇㅈ..?")
+  if message.content == "/":
+    await message.channel.send("")
 
 
 
 
-
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run("Njg0ODU1NDQ0NzY2MDY0NjYy.XmCY4w.u2kPRCMst-kQtDefygXiLa8Pfkg")
