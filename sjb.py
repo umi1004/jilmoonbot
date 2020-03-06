@@ -30,7 +30,7 @@ async def on_message(message):
   if message.content == "/유진":
     await message.channel.send("고뚱 : 고릴라 뚱땡이라는 뜻")
   if message.content == "/메이플":
-    await message.channel.send("재획비, 어빌리티, 헤이븐, 세계수, 크리티아스, 여로, 모라스, 에스페라, 파프추옵, 앱솔추옵을(를) 입력해 주세요.")
+    await message.channel.send("재획비, 재획, 어빌리티, 헤이븐, 세계수, 크리티아스, 여로, 모라스, 에스페라, 파프추옵, 앱솔추옵을(를) 입력해 주세요.")
   if message.content == "/헤이븐":
     await message.channel.send("https://cdn.discordapp.com/attachments/562160059786985472/684900134554697728/i14525276264.png")
   if message.content == "/세계수":
@@ -119,9 +119,20 @@ async def on_message(message):
     await message.channel.send("https://play.watcha.net/")
   if message.content == "/왕코":
     await message.channel.send("ㄱㅇㅈ..?")
+
+# 2020.03.05 업데이트 이전
+  if message.content == "/재획준비":
+    await message.channel.send("재획, 링크, 유니온, 경쿠, 경뿌, 몬스터파크 물약, 혈맹의 반지, 정령의 펜던트")
+  if message.content == "/혜띄":
+    await message.channel.send("(❁´▽`❁)")
+  if message.content == "/혀노":
+    await message.channel.send("노잼 아저씨")
+  if message.content == "/":
+    await message.channel.send("")
   if message.content == "/":
     await message.channel.send("")
 
+# 2020~ 나중에 다른거 추가 준비
 
 
 access_token = os.environ["BOT_TOKEN"]
