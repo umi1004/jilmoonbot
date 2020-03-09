@@ -17,7 +17,8 @@ async def on_message(message):
 
 # 임베드
   if message.content == "/도움":
-    embed = discord.Embed(icon_url="https://imgur.com/RIj2AXg", title="질문봇의 사용방법!", color=0x62c1cc)
+    embed.set_thumbnail(url="https://imgur.com/RIj2AXg")
+    embed = discord.Embed(icon_url="https://imgur.com/RIj2AXg", title="질문봇의 사용방법!", color=E8D9FF)
     embed.add_field(value="사이트", name="네이버, 네이트, 다음, 유튜브, 티빙, 왓챠, 넷플릭스, 메이플 인벤, 메이플지지", inline=False)
     embed.add_field(value="메이플", name="헤이븐, 세계수, 크리티아스, 여로, 모라스, 에스페라, 어빌리티, 재획준비, 재획비, 앱솔추옵, 파프추옵", inline=False)
     embed.add_field(value="배그, 롤전적", name="ㅇㅇ 배그, 배그전적, 롤전적", inline=False)
