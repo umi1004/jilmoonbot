@@ -14,9 +14,16 @@ async def on_ready():
 async def on_message(message):
   if message.author.bot:
     return None
-  
+
+# 임베드
   if message.content == "/도움":
-    await message.channel.send("/를치고 하고 싶은 말을 물어보세요")
+    embed = discord.Embed(title="메이플", description="주간퀘, 일퀘, 재획준비, 재획비, 어빌리티, 파프추옵, 앱솔추옵", color=0x62c1cc)
+    embed.set_footer(text="헤이븐 세계수 크리티아스 여로 모라스 에스페라")
+    await message.channel.send(embed=embed)
+    await message.channel.send("/를치고 검색해 주세요 :)", embed=embed)
+
+  
+
   if message.content == "/도움말":
     await message.channel.send("각종 사이트,유튜브, 메이플 인벤,메이플지지, 롤전적, 배그전적 등등.. ")
   if message.content == "/유미":
