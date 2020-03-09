@@ -17,10 +17,12 @@ async def on_message(message):
 
 # 임베드
   if message.content == "/도움":
-    embed = discord.Embed(title="메이플", description="주간퀘, 일퀘, 재획준비, 재획비, 어빌리티, 파프추옵, 앱솔추옵", color=0x62c1cc)
-    embed.set_footer(text="헤이븐 세계수 크리티아스 여로 모라스 에스페라")
-    await message.channel.send(embed=embed)
     await message.channel.send("/를치고 검색해 주세요 :)", embed=embed)
+    embed = discord.Embed(title="메이플", description="주간퀘, 일퀘, 재획준비, 재획비, 어빌리티, 파프추옵, 앱솔추옵", color="d1b2ff")
+    embed.set_footer(text="헤이븐 세계수 크리티아스 여로 모라스 에스페라")
+    embed = discord.Embed(title="사이트", description="네이버, 다음, 유튜브, 네이트, 티빙, 왓챠, 넷플릭스", color="d1b2ff")
+    embed.set_footer(text="메이플 인벤, 메이플지지")
+    
 
   
 
