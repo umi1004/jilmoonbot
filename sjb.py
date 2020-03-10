@@ -121,6 +121,7 @@ async def on_message(message):
     await message.channel.send("김태형=V")
   if message.content == "/질문봇":
     await message.channel.send("똑똑이 (ง •̀_•́)ง")
+    embed.set_image(url="https://imgur.com/iGataZm")
   if message.content == "/티빙":
     await message.channel.send("http://www.tving.com/")
   if message.content == "/넷플릭스":
